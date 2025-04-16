@@ -1,60 +1,105 @@
+@font-face {
+    font-family: Bisdak;
+    src: url("/css/fonts/Bisdak.tff");
+    src: url("/css/fonts/Bisdak.ttf") format("truetype"),
+         url("/css/fonts/Bisdak.eot") format("woff"),
+         url("/css/fonts/Bisdak.woff") format("embedded-opentype"),
+}
+
+
+
+:root::-webkit-scrollbar{
+    display: none;
+}
+  
+:root {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
 
 body {
     background-color: #ECECEC;
-    margin: 2rem auto;
-    width: 95%;
+    width: 100%;
+    margin: 0;
     min-width: 320px;
+    color: #2E2E2E;
 }
 
-#menu, h1 {
+#menu {
+    margin-top: 2rem;
+    padding-bottom: 10px;
     text-align: center;
- } 
-
-#menu, h1, h2, h3 {
+    font-family: Bisdak;
     text-transform: uppercase;
 }
 
 #menu a {
     text-decoration: none;
-    color: black;
     font-weight: bold;
+    color: #2E2E2E;
 }
 
 #menu a:hover {
-    color: #950606;
+    color: #C39756;
     transition: 0.35s;
 }
 
-#menu a::after {
-    content:" ― ";
+#menu button {
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    border: 1px solid #2E2E2E;
+    background-color: #2E2E2E;
+    color: #ECECEC; 
+}
+
+
+main, article {
+    width: 95%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+
+
+/* #menu a::after {
+    content:" -- ";
     color: black; 
     font-weight: bold;
 }
 
 #menu a:last-child::after {
     content: none;
+} */
+
+
+
+.foot-class {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(27vh - 95px);
 }
 
-main {
-    margin: 0 1em;
+footer {
+    flex: 1;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    background-color: #2E2E2E;
+    padding: 20px;
 }
 
-article {
-    margin: 0 1em;
+footer p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ECECEC;
 }
 
-h1 {
-    color: #950606;
-}
-
-h2 {
-    color: #1B1B1B;
-}
-
-h3 {
-    color: #444444;
-}
-
-p {
-    color: #2E2E2E;
+footer a {
+    color: #C39756;
 }

@@ -1,0 +1,175 @@
+
+
+
+
+
+h2 {
+    font-family: Bisdak;
+}
+
+
+#view-portfolio {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#view-portfolio button {
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 25px;
+    border: 2px solid #2E2E2E;
+    background-color: #ECECEC;
+    width: 15%;
+    min-width:fit-content;
+    padding: 7px;
+    margin: 0 2px;
+}
+
+#view-portfolio button:hover {
+    color: #ECECEC;
+    background-color: #2E2E2E;
+    transition: 0.35s;
+}
+
+#resume {
+    float: right;
+    margin: 10px 0;
+    text-decoration: underline;
+    font-family: Bisdak;
+    font-size: 12px;
+}
+
+#resume:hover {
+    color: #C39756;
+    transition: 0.35s;
+}
+
+#one p {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 2rem;
+    text-transform: uppercase;
+}
+
+#two p {
+    font-family: Bisdak;
+    margin-left: 2rem;
+}
+
+.main {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.main-sub {
+    font-size: 12px;
+    color: #636363;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1B1B1B;
+}
+
+.main-sub:last-child {
+    border: none;
+}
+
+
+#writing {
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+}
+
+#writing button {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    border: 1% solid #C39756;
+    width: 99.5%;
+    height: 17.2%;
+    background-color: #2E2E2E;
+    color: #C39756; 
+}
+
+#writing button:last- {
+    margin-bottom: none;
+}
+
+
+#web-design {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.column {
+    margin: 0 auto;
+    width: 7.3%;
+    border: 2px solid #1B1B1B;
+    text-decoration: none;
+    filter: grayscale(100%);
+}
+
+.column div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+    font-size: 40px;
+    color: #ECECEC;
+    opacity: 0.97;
+}
+
+.column:hover {
+    filter: none;
+    transition: 0.35s;
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    #web-design {
+        height: 100px;
+    }
+    #web-design div {
+        font-size: 16px;
+    }
+
+    #writing {
+        height: 100px;
+    }
+    #writing div {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #web-design {
+        height: 250px;
+
+    }
+    #web-design div {
+        font-size: 16px;
+    }
+
+    #writing {
+        height: 250px;
+
+    }
+    #writing div {
+        font-size: 16px;
+    }
+
+}
+
+.selected, .selected button:hover{
+    color: #C39756 !important;
+    background-color: #2E2E2E !important;
+}
+/* .selected{
+    color: #C39756 !important;
+    background-color: #2E2E2E;
+} */

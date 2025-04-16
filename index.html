@@ -5,52 +5,91 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>article template</title>
+        <title>Portfolio</title>
         <meta name="description" content="add the meta description here">
         
-        <script src="./main.js"></script>
-        <link rel="stylesheet" href="./css/styles.css">
-
+        <script src="/main.js"></script>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/portfolio.css">
+        <style> #portfolio {border-bottom: 2px solid #C39756; color: #C39756 !important;}</style>
     </head>
 
     <body id="body">
         <script language="javascript"> Menu() </script>
         
-        <h1>title of article</h1>
-        
-        <article>
+
+        <main>
             
-            <p>{introduction}</p>
+            <div id="view-portfolio">
+                <button id="writer" onclick="Writer()">CONTENT WRITER</button>
+                <button id="web-dev" onclick="WebDev()">WEB DEVELOPER</button>
+            </div>
+            <script language="javascript"> WebDev() </script>
 
-            <section>
-                <h2>first heading</h2>
 
-                    <p>{content}{content}<br>
-                        {content}{content}{content}<br>
-                        {content}{content}</p>
 
-                <h3>first point</h3>
+            <section >
+                
+                <div  id="writing">
 
-                    <p>{content}{content}{content}<br>
-                        {content}<br>
-                        {content}{content}</p>
+                    <button>. . .</button>
+                    <button>. . .</button>
+                    <button>Still Thinking</button>
+                    <button>. . .</button>                    
+                    <button>. . .</button>                    
+                    
+                </div>
+                
+                <div id="web-design">
 
-                <h3>second point</h3>
+                    <a class="column" href="https://en.wikipedia.org/wiki/Dog" target="_blank"><div style="background-image: url('/css/images/Pigs (3).jpg'); background-size: contain;">01</div></a>
+                    <a class="column"><div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">02</div></a>
+                    <a class="column"><div style="background-image: url('/css/images/Purple Carrots (1).jpg'); background-size: contain;">03</div></a>
+                    <a class="column"><div style="background-image: url('/css/images/Purple Carrots (2).jpg'); background-size: contain;">04</div></a>
+                    <a class="column"><div style="background-image: url('/css/images/Pigs (0).jpg'); background-size: contain;">05</div></a>
+                    <a class="column"><div style="background-image: url('/css/images/Pigs (2).jpg'); background-size: contain;">06</div></a>
 
-                    <p>{content}{content}{content}<br>
-                        {content}<br>
-                        {content}{content}</p>
+                    <a class="column"><div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">07</div></a>
+                    <a class="column"><div style="background-image: url('/css/images/Purple Carrots (1).jpg'); background-size: contain;">08</div></a>
+                    
+                    <a class="column"><div style="background-image: url('/css/images/Purple Carrots (2).jpg'); background-size: contain;">09</div></a>
+                    <a class="column"><div style="background-image: url('/css/images/Pigs (3).jpg'); background-size: contain;">10</div></a>
+                    <a class="column"><div style="background-image: url('/css/images/Pigs (0).jpg'); background-size: contain;">11</div></a>
+                    <a class="column"><div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">12</div></a>
+                </div>
+
+
+            </section>
+
+
+
+            <a id="resume">View Resume</a>
+
+            <section id="one">
+                <h2>ABOUT ME</h2>
+                <p><strong>Full Name :</strong> Phatchara "Tsingtoh" Khongsamphan <br>
+                <strong>Description :</strong> Content Writer | Hobby Front-End Developer <br>
+                <strong>Interests :</strong> Journaling | Web Game Development
+                </p>
             </section>
             
-            <section>
-                <h2>first heading</h2>
+            <section id="two">
+                <h2>WORK EXPERIENCE</h2>
 
-                    <p>{content}{content}<br>
-                        {content}{content}{content}<br>
-                        {content}{content}</p>
-            </section>
-        </article>
+                    <p class="main">Full-time & Freelance Legal Content Writer</p>
+                    <p class="main-sub">Siam Legal International [Jan. 2024 - Present]</p>
 
+                    <p class="main">Freelance Content Writer & Ghostwriter</p>
+                    <p class="main-sub">[Jan. 2022 - Dec. 2022]</p>
+
+                    <p class="main">Freelance Math & English Tutor</p>
+                    <p class="main-sub">[Apr. 2019 - Jul. 2021]</p>
+            
+                </section>
+        </main>
+
+
+        <script language="javascript"> Foot() </script>
     </body>
 
 </html>

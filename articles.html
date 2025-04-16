@@ -5,52 +5,109 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>article template</title>
+        <title>Articles</title>
         <meta name="description" content="add the meta description here">
         
-        <script src="./main.js"></script>
-        <link rel="stylesheet" href="./css/styles.css">
+        <script src="/main.js"></script>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/articles.css">
         
+        <style> #articles { border-bottom: 2px solid #C39756; color: #C39756 !important;}</style>
     </head>
 
     <body id="body" >
+
         <script language="javascript"> Menu() </script>
 
-        <h1>Articles</h1>
+        <main>
 
-        <article>
-            
-            <p>{introduction}</p>
+        <!-- <details class="main-category">
+            <summary>Digital Marketing</summary>
+            <p>{introduction} + {content}</p> 
+        
+            <details class="sub-category">
+                <summary>Content Marketing</summary>
+                <ul>
+                    <li><a>What Is Content Marketing?</a></li>
+                    <li><a>The Different Types Of Content Creation</a></li>
+                    <li><a>How To Create A Content Marketing Strategy</a></li>
+                 </ul>
+            </details>
+        
+            <details class="sub-category">
+                <summary>Social Media Marketing</summary>
+                <ul>
+                    <li><a>What Is Social Media Marketing?</a></li>
+                 </ul>
+            </details>
 
-            <section>
-                <h2>first heading</h2>
+            <details class="sub-category">
+                <summary>Miscellaneous</summary>
+                <ul>
+                    <li><a>Understanding Maslow's Hierarchy Of Needs</a></li>
+                 </ul>
+            </details>
+        
+        </details> -->
 
-                    <p>{content}{content}<br>
-                        {content}{content}{content}<br>
-                        {content}{content}</p>
 
-                <h3>first point</h3>
+            <details open class="main-category">
+                <summary class="main-category-head">Search Engine Optimization [SEO]</summary>
 
-                    <p>{content}{content}{content}<br>
-                        {content}<br>
-                        {content}{content}</p>
+                <details class="sub-category">
+                    <summary>General Information</summary>
+                    <ul>
+                        <li><a>The Importance Of SEO In Digital Marketing</a></li>
+                        <li><a>How Google's Search Engines Rank Content</a></li>
+                        <li><a>How To Help Google Find Your Content</a></li>
+                        <li><a>How To Create An SEO Strategy</a></li>
+                        <li><a>How To Do Keyword Research For SEO</a></li>
+                        <li><a>SEO Performance Analytics</a></li>
+                        <li><a>Google Page Experience And Core Web Vitals</a></li>
+                        <li><a>Google's Spam Policies For Web Search</a></li>
+                        <li><a>A Complete Guide To Google's Search Ranking Systems</a></li>
+                    </ul>
+                </details>
 
-                <h3>second point</h3>
+                <details class="sub-category">
+                    <summary>On-Page SEO</summary>
+                    <ul>
+                        <li><a>What Is On-Page SEO?</a></li>
+                        <li><a>How To Optimise Your Webpage's SEO</a></li>
+                    </ul>
+                </details>
 
-                    <p>{content}{content}{content}<br>
-                        {content}<br>
-                        {content}{content}</p>
-            </section>
-            
-            <section>
-                <h2>first heading</h2>
+                <details class="sub-category">
+                    <summary>Off-Page SEO</summary>
+                    <ul>
+                        <li><a>What Is Off-Page SEO?</a></li>
+                        <li><a>How To Link Build For SEO</a></li>
+                    </ul>
+                </details>
 
-                    <p>{content}{content}<br>
-                        {content}{content}{content}<br>
-                        {content}{content}</p>
-            </section>
-        </article>
+                <details class="sub-category">
+                    <summary>Technical SEO</summary>
+                    <ul>
+                        <li><a>What Is Technical SEO?</a></li>
+                        <li><a>How To Improve Your Technical SEO</a></li>
+                        <li><a>How To Perform a Technical SEO Audit</a></li>
+                        <li><a>How To Create A Sitemap For Your Website</a></li>
+                        <li><a>How To Create A Robots.txt File For Your Website</a></li>
+                        <li><a>How To Deal With Duplicate Content On Your Website</a></li>
+                        <li><a>How To Reduce Your Website's Page Size And Increase Load Speed</a></li>
+                        <li><a>How To Limit Your Website's HTTP Requests And Maximize Page Caching</a></li>
+                        <li><a>How To Migrate A Website Without Losing SEO</a></li>
+                    </ul>
 
+                </details>
+
+            </details>
+
+            <!-- <a class="downloadables">Download Documents</a> -->
+
+        </main>
+
+        <script language="javascript"> Foot() </script>
     </body>
 
 </html>
