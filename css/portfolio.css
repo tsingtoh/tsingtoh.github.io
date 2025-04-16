@@ -62,14 +62,17 @@ h2 {
 
 .main-sub {
     font-size: 12px;
-    color: #C39756;
-    opacity: 0.7;;
+    color: #636363;
     margin-top: 0px;
     padding-bottom: 10px;
     border-bottom: 1px solid #1B1B1B;
 }
 
-/* color: #636363; */
+.main-sub:hover {
+    color: #C39756;
+    transition: 0.35s;
+}
+
 
 .main-sub:last-child {
     border: none;
