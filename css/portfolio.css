@@ -81,24 +81,24 @@ h2 {
 
 #writing {
     display: none;
-    margin: 0 auto;
     width: 100%;
     height: 400px;
+    background-color: #2E2E2E;
+}
+
+#writing div {
+    margin: auto;
+    height: 100%;
 }
 
 #writing button {
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
-    margin-bottom: 1%;
-    border: 1% solid #C39756;
-    width: 99.5%;
-    height: 17.2%;
+    width: 100%;
+    height: 20%;
     background-color: #2E2E2E;
-    color: #C39756; 
-}
-
-#writing button:last- {
-    margin-bottom: none;
+    color: #ECECEC; 
+    font-weight: bold;
 }
 
 
@@ -150,6 +150,7 @@ h2 {
     #writing div {
         font-size: 16px;
     }
+
 }
 
 @media screen and (max-width: 800px) {
