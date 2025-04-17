@@ -6,15 +6,29 @@
          url("/css/fonts/Bisdak.woff") format("embedded-opentype"),
 }
 
+@font-face {
+    font-family: Proxima Nova;
+    src: url("/css/fonts/Proxima Nova.ttf");
+    src: url("/css/fonts/Proxima Nova.ttf") format("truetype"),
+}
 
-
+/* 
 :root::-webkit-scrollbar{
     display: none;
-}
+} */
   
-:root {
-    scrollbar-width: none;
+/* :root {
     -ms-overflow-style: none;
+} */
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+
+:root {
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 body {
@@ -24,6 +38,14 @@ body {
     min-width: 320px;
     color: #2E2E2E;
 }
+
+main, article {
+    width: 95%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+/* MENU */
 
 #menu {
     margin-top: 2rem;
@@ -54,28 +76,22 @@ body {
     border: 1px solid #2E2E2E;
     background-color: #2E2E2E;
     color: #ECECEC; 
+    animation-iteration-count: infinite;
+    animation-name: rotation;
+}
+
+@keyframes rotation {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+
 }
 
 
-main, article {
-    width: 95%;
-    margin: 0px auto;
-    margin-bottom: 20px;
-}
-
-
-
-/* #menu a::after {
-    content:" -- ";
-    color: black; 
-    font-weight: bold;
-}
-
-#menu a:last-child::after {
-    content: none;
-} */
-
-
+/* FOOTER */
 
 .foot-class {
     display: flex;
@@ -102,4 +118,13 @@ footer p {
 
 footer a {
     color: #C39756;
+    text-decoration: none;
+}
+
+
+/* CLASSES = DECORATION */
+
+.selected, .selected button:hover{
+    color: #C39756 !important;
+    background-color: #2E2E2E !important;
 }

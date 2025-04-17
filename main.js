@@ -8,25 +8,27 @@ function Head() {
 }
 
 function Menu() {
-
     document.getElementById(`body`).insertAdjacentHTML(`afterbegin`, 
         `<nav id="menu">
-        <a id="articles" href="/articles.html">Articles</a>
+        <a id="homepage">Homepage</a>
+        -
+        <a id="articles" href="/articles">Articles</a>
         -
         <a id="portfolio" href="/index.html">Portfolio</a>
-        
-            <div>
-            <button>+</button>
-            <button>+</button>
-            <button>-</button>
-            </div>
-
         </nav>`);
     }
+
+function MenuXtra() {
+    document.getElementById(`menu`).insertAdjacentHTML(`beforeend`, 
+        `<div>
+            <button style="rotate: 50deg; animation-duration: 1.75s;">+</button>
+            <button style="rotate: 15deg; animation-duration: 1.8s;">+</button>
+            <button style="animation-duration: 1.9s;">-</button>
+        </div>`);
+}
     
 
 function Foot() {
-
     document.getElementById(`body`).insertAdjacentHTML(`beforeend`, 
         `<div class="foot-class">
             <footer>
@@ -35,8 +37,7 @@ function Foot() {
                 <p><strong>ALL RIGHTS RESERVED © 2025 TSINGTOH</strong></p>
 
             </footer>
-        </div>
-        `);
+        </div>`);
 }
 
 
@@ -44,14 +45,50 @@ function WebDev() {
     document.getElementById(`web-dev`).classList.add(`selected`);
     document.getElementById(`writer`).classList.remove(`selected`);
 
-    document.getElementById(`writing`).style.display = `none`;
     document.getElementById(`web-design`).style.display = `flex`;
+    document.getElementById(`writing`).style.display = `none`;
+
 }
 
 function Writer() {
     document.getElementById(`writer`).classList.add(`selected`);
     document.getElementById(`web-dev`).classList.remove(`selected`);
 
-    document.getElementById(`web-design`).style.display = `none`;
-    document.getElementById(`writing`).style.display = `block`;
+
+        document.getElementById(`writing`).style.display = `block`;
+        document.getElementById(`web-design`).style.display = `none`;
+
 }
+
+function Directory() {
+    document.getElementById(`directory`).insertAdjacentHTML(`beforeend`, `<include src="/articles/index.html"></include>`);
+    InsertHTML();
+}
+
+function InsertHTML() {
+    let includes = document.getElementsByTagName('include');
+
+    for(var i=0; i<includes.length; i++){
+    let include = includes[i];
+
+    load_file(includes[i].attributes.src.value, function(text){
+        include.insertAdjacentHTML('afterend', text);
+        include.remove();
+        });
+    }
+
+    function load_file(filename, callback) {
+    fetch(filename).then(response => response.text()).then(text => callback(text));
+    }
+}
+
+// function OpenDirectory() {
+//     if (document.getElementById(`directory-content`).hidden == true){
+//         document.getElementById(`directory-content`).hidden = false;
+//         document.getElementById(`directory-button`).classList.add(`selected`);
+//     }
+//     else {
+//         document.getElementById(`directory-content`).hidden = true;
+//         document.getElementById(`directory-button`).classList.remove(`selected`);
+//     }
+// }

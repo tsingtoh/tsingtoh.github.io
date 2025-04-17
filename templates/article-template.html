@@ -5,52 +5,67 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>article template</title>
+        <title>Post Template</title>
         <meta name="description" content="add the meta description here">
         
-        <script src="../main.js"></script>
-        <link rel="stylesheet" href="../css/styles.css">
+        <script src="/main.js"></script>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/posts.css">
 
     </head>
 
-    <body id="body" >
-        <script language="javascript"> Menu() </script>
+    <body id="body">
+        <script language="javascript"> Menu(); MenuXtra()</script>
 
-        <h1>Article Template</h1>
 
-        <article>
+        <main>
 
-            <p>{introduction}</p>
+            <h1>Post Template</h1>
 
-            <section>
-                <h2>first heading</h2>
-
-                    <p>{content}{content}<br>
-                        {content}{content}{content}<br>
-                        {content}{content}</p>
-
-                <h3>first point</h3>
-
-                    <p>{content}{content}{content}<br>
-                        {content}<br>
-                        {content}{content}</p>
-
-                <h3>second point</h3>
-
-                    <p>{content}{content}{content}<br>
-                        {content}<br>
-                        {content}{content}</p>
-            </section>
+            <article id="article">
             
-            <section>
-                <h2>first heading</h2>
+            
+            
 
-                    <p>{content}{content}<br>
-                        {content}{content}{content}<br>
-                        {content}{content}</p>
-            </section>
-        </article>
 
+                <p>{introduction}</p>
+
+                <section>
+                    <h2>first heading</h2>
+
+                        <p>{content}{content}<br>
+                            {content}{content}{content}<br>
+                            {content}{content}</p>
+
+                    <h3>first point</h3>
+
+                        <p>{content}{content}{content}<br>
+                            {content}<br>
+                            {content}{content}</p>
+
+                    <h3>second point</h3>
+
+                        <p>{content}{content}{content}<br>
+                            {content}<br>
+                            {content}{content}</p>
+                </section>
+                
+                <section>
+                    <h2>first heading</h2>
+
+                        <p>{content}{content}<br>
+                            {content}{content}{content} Some stuff goes over here werér dfsdf kdsjlfdjsf dsafd asfdakslfda f<br>
+                            {content}{content}</p>
+                </section>
+
+
+            </article>
+
+        <div id="directory"><script language="javascript"> Directory()</script></div>
+
+    </main>
+
+        <script language="javascript"> Foot() </script>
     </body>
 
 </html>

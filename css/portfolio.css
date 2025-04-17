@@ -1,8 +1,4 @@
 
-
-
-
-
 h2 {
     font-family: Bisdak;
 }
@@ -65,7 +61,7 @@ h2 {
     color: #636363;
     margin-top: 0px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #1B1B1B;
+    border-bottom: 1px solid #2E2E2E;
 }
 
 .main-sub:hover {
@@ -76,6 +72,13 @@ h2 {
 
 .main-sub:last-child {
     border: none;
+}
+
+
+#zero {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
 }
 
 
@@ -134,26 +137,11 @@ h2 {
     opacity: 1;
 }
 
-
-
-@media screen and (max-width: 480px) {
-    #web-design {
-        height: 100px;
-    }
-    #web-design div {
-        font-size: 16px;
-    }
-
-    #writing {
-        height: 100px;
-    }
-    #writing div {
-        font-size: 16px;
-    }
-
-}
-
 @media screen and (max-width: 800px) {
+
+    #zero {
+        height: 250px;
+    }
     #web-design {
         height: 250px;
 
@@ -172,11 +160,4 @@ h2 {
 
 }
 
-.selected, .selected button:hover{
-    color: #C39756 !important;
-    background-color: #2E2E2E !important;
-}
-/* .selected{
-    color: #C39756 !important;
-    background-color: #2E2E2E;
-} */
+

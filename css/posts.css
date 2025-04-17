@@ -1,32 +1,24 @@
-#menu, h1 {
-    text-align: center;
-    font-family: Bisdak;
- } 
-
-#menu, h1, h2, h3 {
-    text-transform: uppercase;
-}
-
-#menu a {
-    text-decoration: none;
-    color: #2E2E2E;
-    font-weight: bold;
-}
-
-
-
-
 
 h1 {
-    color: #C39756;
+    margin-top: 7px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    text-decoration: underline ;
 }
 
-h2 {
-    color: #1B1B1B;
+h2, h3 {
+    color: #2E2E2E;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h3 {
     color: #444444;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 a {
@@ -40,3 +32,16 @@ a:hover {
     transition: 0.35s;
 }
 
+/* main {
+    border-top: 3px solid #2E2E2E;
+} */
+
+#directory {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 3px solid #2E2E2E;
+}
+
+#directory summary {
+    font-size: 16px;
+}
