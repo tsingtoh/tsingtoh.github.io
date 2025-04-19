@@ -1,6 +1,3 @@
-window.onload = function() {
-    Head()
-}
 
 function Head() {
     document.getElementById(`head`).insertAdjacentHTML(`beforeend`, 
@@ -10,8 +7,6 @@ function Head() {
 function Menu() {
     document.getElementById(`body`).insertAdjacentHTML(`afterbegin`, 
         `<nav id="menu">
-        <a id="homepage">Homepage</a>
-        -
         <a id="articles" href="/articles">Articles</a>
         -
         <a id="portfolio" href="/index.html">Portfolio</a>
@@ -38,26 +33,6 @@ function Foot() {
 
             </footer>
         </div>`);
-}
-
-
-function WebDev() {
-    document.getElementById(`web-dev`).classList.add(`selected`);
-    document.getElementById(`writer`).classList.remove(`selected`);
-
-    document.getElementById(`web-design`).style.display = `flex`;
-    document.getElementById(`writing`).style.display = `none`;
-
-}
-
-function Writer() {
-    document.getElementById(`writer`).classList.add(`selected`);
-    document.getElementById(`web-dev`).classList.remove(`selected`);
-
-
-        document.getElementById(`writing`).style.display = `block`;
-        document.getElementById(`web-design`).style.display = `none`;
-
 }
 
 function Directory() {
@@ -92,3 +67,6 @@ function InsertHTML() {
 //         document.getElementById(`directory-button`).classList.remove(`selected`);
 //     }
 // }
+
+
+

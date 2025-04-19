@@ -32,7 +32,8 @@
 }
 
 body {
-    background-color: #ECECEC;
+    /* background: linear-gradient(50deg, #ECECEC 60%,  #2C2C2C ); */
+    background: #ECECEC;
     width: 100%;
     margin: 0;
     min-width: 320px;
@@ -73,12 +74,20 @@ main, article {
     width: 35px;
     height: 35px;
     border-radius: 35px;
-    border: 1px solid #2E2E2E;
+    border: 2px solid #2E2E2E;
     background-color: #2E2E2E;
     color: #ECECEC; 
     animation-iteration-count: infinite;
     animation-name: rotation;
 }
+
+/* #menu button:hover {
+    color: #2E2E2E;
+    background-color: transparent;
+    transition-property: border background-color color;
+    transition:step-end;
+    transition: 2s;
+} */
 
 @keyframes rotation {
     from {

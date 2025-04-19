@@ -7,11 +7,13 @@ h2 {
 #view-portfolio {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-#view-portfolio button {
+.page-button button {
+    position: relative;
     font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
     border-radius: 25px;
     border: 2px solid #2E2E2E;
     background-color: #ECECEC;
@@ -19,25 +21,49 @@ h2 {
     min-width:fit-content;
     padding: 7px;
     margin: 0 2px;
+    
 }
 
-#view-portfolio button:hover {
+.page-button button:hover {
     color: #ECECEC;
     background-color: #2E2E2E;
     transition: 0.35s;
 }
 
-#resume {
-    float: right;
-    margin: 10px 0;
-    text-decoration: underline;
-    font-family: Bisdak;
-    font-size: 12px;
+.page-button div {
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: black;
 }
 
-#resume:hover {
+#view-portfolio div {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#resume {
+    float: right;
+    margin-top: 30px;
+    margin-right: 10%;
+    margin-bottom: 30px;
+}
+
+#resume div {
+    bottom: 100%;
+    left: 50%;
+    height: 200%;
+    transform: translate(-50%, 0%);  
+}
+
+#resume button:focus {
     color: #C39756;
-    transition: 0.35s;
+    background-color: #2E2E2E;
+}
+
+#one {
+    margin-top: 10px;
 }
 
 #one p {
@@ -64,10 +90,10 @@ h2 {
     border-bottom: 1px solid #2E2E2E;
 }
 
-.main-sub:hover {
+/* .main-sub:hover {
     color: #C39756;
     transition: 0.35s;
-}
+} */
 
 
 .main-sub:last-child {
@@ -75,18 +101,22 @@ h2 {
 }
 
 
+
 #zero {
+    position: relative;
     width: 100%;
     height: 400px;
     margin: 0 auto;
+    margin-bottom: 10px;
+    /* overflow-y: hidden; */
 }
 
 
 #writing {
-    display: none;
-    width: 100%;
+    width: 94%;
     height: 400px;
-    background-color: #2E2E2E;
+    opacity: 0;
+    visibility: hidden;
 }
 
 #writing div {
@@ -99,25 +129,31 @@ h2 {
     text-transform: uppercase;
     width: 100%;
     height: 20%;
-    background-color: #2E2E2E;
+    border: none;
+    background: transparent;
     color: #ECECEC; 
     font-weight: bold;
 }
 
-
 #web-design {
+    position: absolute;
+    top: 0;
     display: flex;
-    width: 100%;
+    width: 94%;
     height: 400px;
     font-family: 'Courier New', Courier, monospace;
+    opacity: 0;
+    visibility: hidden;
+
 }
 
 .column {
     margin: 0 auto;
-    width: 7.3%;
+    width: 7.7%;
     border: 2px solid #1B1B1B;
     text-decoration: none;
-    filter: grayscale(100%);
+    filter: grayscale(70%) brightness(45%);
+    animation: slide;
 }
 
 .column div {
@@ -128,36 +164,97 @@ h2 {
     font-weight: bold;
     font-size: 40px;
     color: #ECECEC;
-    opacity: 0.97;
 }
 
 .column:hover {
-    filter: none;
+    filter: grayscale(0%) brightness(100%);
     transition: 0.35s;
-    opacity: 1;
 }
 
-@media screen and (max-width: 800px) {
-
-    #zero {
-        height: 250px;
-    }
-    #web-design {
-        height: 250px;
-
-    }
-    #web-design div {
-        font-size: 16px;
-    }
-
-    #writing {
-        height: 250px;
-
-    }
-    #writing div {
-        font-size: 16px;
-    }
-
+.column:hover + a {
+    filter: grayscale(50%) brightness(55%);
+    transition: 0.35s;
 }
 
+.column:hover + a ~ * {
+    filter: brightness(20%);
+    transition: 0.0s;
+}
 
+.column:has(+ *:hover) {
+    filter: grayscale(50%) brightness(55%);
+    transition: 0.35s;
+}
+
+.column:has(+ a ~ *:hover) {
+    filter: brightness(20%);
+    transition: 0.0s;
+}
+
+#zero-text {
+    color: #ECECEC;
+    height: 45px;
+    width: 94%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.make-visible {
+    transition: linear 0.35s !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* body {
+    background: linear-gradient(60deg, #bbbbbb, #9d9d9d, #acaaaa , #464444 ) ;
+} */
+
+#desktop-display {
+    margin-left: -2.7%;
+    padding: 2.7%;
+    width: 106%;
+    background-color: black;
+    border-top: 7px double #ECECEC;
+    border-bottom: 7px double #ECECEC;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.slide {
+    animation-timing-function: ease-in;
+    animation: slider 3s;
+}
+
+#web-design:hover .column {
+    animation: none;
+}
+
+@keyframes slider {
+    10% {
+        filter: grayscale(65%) brightness(50%);
+    }
+    25% {
+        filter: grayscale(50%) brightness(55%);
+    }
+    50% {
+        filter: grayscale(0%) brightness(100%);
+    }
+    75% {
+        filter: grayscale(50%) brightness(55%);
+    }
+    90% {
+        filter: grayscale(65%) brightness(50%);
+    }
+    100% {
+        filter: grayscale(70%) brightness(45%);
+    }
+}
+
+/* @media screen and (max-width: 850px) {
+
+    #desktop-display, #view-portfolio, #resume {
+        display: none;
+    }
+} */

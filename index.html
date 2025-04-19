@@ -9,61 +9,99 @@
         <meta name="description" content="add the meta description here">
         
         <script src="/main.js"></script>
+        <script src="/portfolio.js"></script>
         <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="/css/portfolio.css">
-        <style> #portfolio {border-bottom: 2px solid #C39756; color: #C39756 !important;}</style>
+        <style> #portfolio {border-bottom: 2px solid #C39756; color: #C39756 !important; text-shadow: 0px 3px 2px #2E2E2E;}</style>
     </head>
 
     <body id="body">
-        <script language="javascript"> Menu(); MenuXtra() </script>
-        
+        <script language="javascript">Head(); Menu(); MenuXtra();</script>
 
+    
         <main>
             
-            <div id="view-portfolio">
-                <button id="writer" onclick="Writer()">CONTENT WRITER</button>
-                <button id="web-dev" onclick="WebDev()">WEB DEVELOPER</button>
+
+            <div id="view-portfolio" class="page-button">
+                <button id="writer" onclick="Writer()" ><div></div>CONTENT WRITER</button>
+                ---
+                <button id="web-dev" onclick="WebDev()"><div></div>WEB DEVELOPER</button>
             </div>
             <script language="javascript"> WebDev() </script>
 
 
-
-            <section id="zero">
-                
-                <div id="writing">
-                    <div>
-                        <button>. . .</button>
-                        <button>. . .</button>
-                        <button>Work In Progress</button>
-                        <button>. . .</button>                    
-                        <button>. . .</button>                    
+            <section id="desktop-display" >
+                <section id="zero">
+            
+                    <div id="writing">
+                        <div>
+                            <button></button>
+                            <button></button>
+                            <button>Work In Progress</button>
+                            <button></button>
+                            <button></button>
+                        </div>
                     </div>
-                </div>
-                
-                <div id="web-design">
+            
+                    <div id="web-design" class="make-visible">
+            
+                        <a class="column">
+                            <div style="background-image: url('/css/images/Pigs (3).jpg'); background-size: contain;">01</div>
+                        </a>
+                        <a class="column">
+                            <div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">02</div>
+                        </a>
+                        <a class="column">
+                            <div style="background-image: url('/css/images/Purple Carrots (1).jpg'); background-size: contain;">03
+                            </div>
+                        </a>
+                        <a class="column">
+                            <div style="background-image: url('/css/images/Purple Carrots (2).jpg'); background-size: contain;">04
+                            </div>
+                        </a>
+                        <a class="column">
+                            <div style="background-image: url('/css/images/Pigs (0).jpg'); background-size: contain;">05</div>
+                        </a>
+                        <a class="column">
+                            <div style="background-image: url('/css/images/Pigs (2).jpg'); background-size: contain;">06</div>
+                        </a>
+            
+                        <a class="column">
+                            <div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">07</div>
+                        </a>
+                        <a class="column">
+                            <div style="background-image: url('/css/images/Purple Carrots (1).jpg'); background-size: contain;">08
+                            </div>
+                        </a>
+            
+                        <a class="column">
+                            <div style="background-image: url('/css/images/Purple Carrots (2).jpg'); background-size: contain;">09
+                            </div>
+                        </a>
+                        <a class="column">
+                            <div style="background-image: url('/css/images/Pigs (3).jpg'); background-size: contain;">10</div>
+                        </a>
+                        <a class="column">
+                            <div style="background-image: url('/css/images/Pigs (0).jpg'); background-size: contain;">11</div>
+                        </a>
+                        <a class="column">
+                            <div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">12</div>
+                        </a>
+                    </div>
+                </section>
 
-                    <a class="column" href="https://en.wikipedia.org/wiki/Dog" target="_blank"><div style="background-image: url('/css/images/Pigs (3).jpg'); background-size: contain;">01</div></a>
-                    <a class="column"><div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">02</div></a>
-                    <a class="column"><div style="background-image: url('/css/images/Purple Carrots (1).jpg'); background-size: contain;">03</div></a>
-                    <a class="column"><div style="background-image: url('/css/images/Purple Carrots (2).jpg'); background-size: contain;">04</div></a>
-                    <a class="column"><div style="background-image: url('/css/images/Pigs (0).jpg'); background-size: contain;">05</div></a>
-                    <a class="column"><div style="background-image: url('/css/images/Pigs (2).jpg'); background-size: contain;">06</div></a>
-
-                    <a class="column"><div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">07</div></a>
-                    <a class="column"><div style="background-image: url('/css/images/Purple Carrots (1).jpg'); background-size: contain;">08</div></a>
-                    
-                    <a class="column"><div style="background-image: url('/css/images/Purple Carrots (2).jpg'); background-size: contain;">09</div></a>
-                    <a class="column"><div style="background-image: url('/css/images/Pigs (3).jpg'); background-size: contain;">10</div></a>
-                    <a class="column"><div style="background-image: url('/css/images/Pigs (0).jpg'); background-size: contain;">11</div></a>
-                    <a class="column"><div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">12</div></a>
-                </div>
-
+                <div id="zero-text">
+                <p id="project-text">Select a project</p>
+            </div>
 
             </section>
+            <script language="javascript">Slider()</script>
 
-
-
-            <a id="resume">View Resume</a>
+            <div id="resume" class="page-button">
+                <a href="https://tsingtoh.github.io/index.html" target="_blank"><button><div></div>View Curriculum Vitae</button></a>
+                ---
+                <button style="background-color: #C39756; color: #2E2E2E">ETC.</button>
+            </div>
 
             <section id="one">
                 <h2>ABOUT ME</h2>
