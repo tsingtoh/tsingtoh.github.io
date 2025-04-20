@@ -28,7 +28,7 @@ function Foot() {
         `<div class="foot-class">
             <footer>
 
-                <p>GET IN TOUCH : <a href="https://www.linkedin.com/in/tsingtoh/" target="_blank">LinkedIn</a> | <a>Email</a></p>
+                <p>GET IN TOUCH : <a href="https://www.linkedin.com/in/tsingtoh/" target="_blank">LinkedIn</a> | <a href="mailto:tsingtoh@gmail.com">Email</a></p>
                 <p><strong>ALL RIGHTS RESERVED © 2025 TSINGTOH</strong></p>
 
             </footer>

@@ -16,94 +16,121 @@
     </head>
 
     <body id="body">
-        <script language="javascript">Head(); Menu(); MenuXtra();</script>
+        <script language="javascript">Head();</script>
 
-    
-        <main>
+        <h1>Portfolio</h1>
+
+        <div id="view-portfolio" class="page-button">
+            <button id="writer" onclick="Writer()" ><div></div>CONTENT WRITER</button>
+            ---
+            <button id="web-dev" class="selected" onclick="WebDev()"><div></div>WEB DEVELOPER</button>
             
+            <button style="text-transform: lowercase; width: 2.5%;">i</button>
+        </div>
 
-            <div id="view-portfolio" class="page-button">
-                <button id="writer" onclick="Writer()" ><div></div>CONTENT WRITER</button>
-                ---
-                <button id="web-dev" onclick="WebDev()"><div></div>WEB DEVELOPER</button>
-            </div>
-            <script language="javascript"> WebDev() </script>
+        <section id="desktop-display" >
 
 
-            <section id="desktop-display" >
-                <section id="zero">
-            
-                    <div id="writing">
-                        <div>
-                            <button></button>
-                            <button></button>
-                            <button>Work In Progress</button>
-                            <button></button>
-                            <button></button>
+
+            <div id="zoo">
+
+                
+
+            <section id="zero">
+        
+                <div id="writing">
+                    <div>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+        
+                <div id="web-design" class="make-visible" onmouseleave="OrigintalText()">
+        
+                    <a onmouseover="ProjectText(0)" class="column">
+                        <div style="background-image: url('/css/images/Pigs (3).jpg'); background-size: contain;">01</div>
+                    </a>
+                    <a onmouseover="ProjectText(1)" class="column">
+                        <div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">02</div>
+                    </a>
+                    <a onmouseover="ProjectText(2)" class="column">
+                        <div style="background-image: url('/css/images/Purple Carrots (1).jpg'); background-size: contain;">03
                         </div>
-                    </div>
-            
-                    <div id="web-design" class="make-visible">
-            
-                        <a class="column">
-                            <div style="background-image: url('/css/images/Pigs (3).jpg'); background-size: contain;">01</div>
-                        </a>
-                        <a class="column">
-                            <div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">02</div>
-                        </a>
-                        <a class="column">
-                            <div style="background-image: url('/css/images/Purple Carrots (1).jpg'); background-size: contain;">03
-                            </div>
-                        </a>
-                        <a class="column">
-                            <div style="background-image: url('/css/images/Purple Carrots (2).jpg'); background-size: contain;">04
-                            </div>
-                        </a>
-                        <a class="column">
-                            <div style="background-image: url('/css/images/Pigs (0).jpg'); background-size: contain;">05</div>
-                        </a>
-                        <a class="column">
-                            <div style="background-image: url('/css/images/Pigs (2).jpg'); background-size: contain;">06</div>
-                        </a>
-            
-                        <a class="column">
-                            <div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">07</div>
-                        </a>
-                        <a class="column">
-                            <div style="background-image: url('/css/images/Purple Carrots (1).jpg'); background-size: contain;">08
-                            </div>
-                        </a>
-            
-                        <a class="column">
-                            <div style="background-image: url('/css/images/Purple Carrots (2).jpg'); background-size: contain;">09
-                            </div>
-                        </a>
-                        <a class="column">
-                            <div style="background-image: url('/css/images/Pigs (3).jpg'); background-size: contain;">10</div>
-                        </a>
-                        <a class="column">
-                            <div style="background-image: url('/css/images/Pigs (0).jpg'); background-size: contain;">11</div>
-                        </a>
-                        <a class="column">
-                            <div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">12</div>
-                        </a>
-                    </div>
-                </section>
-
-                <div id="zero-text">
-                <p id="project-text">Select a project</p>
-            </div>
-
+                    </a>
+                    <a onmouseover="ProjectText(3)" class="column">
+                        <div style="background-image: url('/css/images/Purple Carrots (2).jpg'); background-size: contain;">04
+                        </div>
+                    </a>
+                    <a onmouseover="ProjectText(4)" class="column">
+                        <div style="background-image: url('/css/images/Pigs (0).jpg'); background-size: contain;">05</div>
+                    </a>
+                    <a onmouseover="ProjectText(5)" class="column">
+                        <div style="background-image: url('/css/images/Pigs (2).jpg'); background-size: contain;">06</div>
+                    </a>
+        
+                    <a onmouseover="ProjectText(6)" class="column">
+                        <div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">07</div>
+                    </a>
+                    <a onmouseover="ProjectText(7)" class="column">
+                        <div style="background-image: url('/css/images/Purple Carrots (1).jpg'); background-size: contain;">08
+                        </div>
+                    </a>
+        
+                    <a onmouseover="ProjectText(8)" class="column">
+                        <div style="background-image: url('/css/images/Purple Carrots (2).jpg'); background-size: contain;">09
+                        </div>
+                    </a>
+                    <a onmouseover="ProjectText(9)" class="column">
+                        <div style="background-image: url('/css/images/Pigs (3).jpg'); background-size: contain;">10</div>
+                    </a>
+                    <a onmouseover="ProjectText(10)" class="column">
+                        <div style="background-image: url('/css/images/Pigs (0).jpg'); background-size: contain;">11</div>
+                    </a>
+                    <a onmouseover="ProjectText(11)" class="column">
+                        <div style="background-image: url('/css/images/Pigs (1).jpg'); background-size: contain;">12</div>
+                    </a>
+                </div>
             </section>
-            <script language="javascript">Slider()</script>
 
-            <div id="resume" class="page-button">
-                <a href="https://tsingtoh.github.io/index.html" target="_blank"><button><div></div>View Curriculum Vitae</button></a>
-                ---
-                <button style="background-color: #C39756; color: #2E2E2E">ETC.</button>
+
+            <div id="zero-text">
+            <p id="project-text">Select a project</p>
+            <p id="project-description"></p>
             </div>
 
-            <section id="one">
+            <div class="film">
+                <button>+</button>
+                <button>+</button>
+                <button>-</button>
+            </div>
+
+            <div id="zero-buttons">
+                <p>
+                    <a href="/css/documents/Phatchara (Tsingtoh) Khongsamphan CV.pdf" target="_blank">View Curriculum Vitae</a><br>
+                    Contact : <a href="https://www.linkedin.com/in/tsingtoh/" target="_blank">LinkedIn</a> | <a href="mailto:tsingtoh@gmail.com">Email</a><br>
+                    ALL RIGHTS RESERVED © 2025 TSINGTOH
+                </p>
+            </div>
+            </div>
+        </section>
+        <script language="javascript">Slider()</script>
+    
+    
+       
+            
+
+           
+
+            <!-- <div id="resume" class="page-button">
+                <a href="/css/documents/Phatchara (Tsingtoh) Khongsamphan CV.pdf" target="_blank"><button><div></div>View Curriculum Vitae</button></a>
+                ---
+                <a href="mailto:tsingtoh@gmail.com"><button style="background-color: #C39756; color: #2E2E2E">Contact : Email</button></a>
+            </div> -->
+
+            <!-- <section id="one">
                 <h2>ABOUT ME</h2>
                 <p><strong>Full Name :</strong> Phatchara "Tsingtoh" Khongsamphan <br>
                 <strong>Description :</strong> Content Writer | Hobby Front-End Developer <br>
@@ -123,11 +150,11 @@
                     <p class="main">Freelance Math & English Tutor</p>
                     <p class="main-sub">[Apr. 2019 - Jul. 2021]</p>
             
-                </section>
-        </main>
+                </section> -->
+        
 
 
-        <script language="javascript"> Foot() </script>
+        <!-- <script language="javascript"> Foot() </script> -->
     </body>
 
 </html>

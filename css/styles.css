@@ -35,7 +35,7 @@ body {
     /* background: linear-gradient(50deg, #ECECEC 60%,  #2C2C2C ); */
     background: #ECECEC;
     width: 100%;
-    margin: 0;
+    margin: 20px 0;
     min-width: 320px;
     color: #2E2E2E;
 }
@@ -43,7 +43,6 @@ body {
 main, article {
     width: 95%;
     margin: 0px auto;
-    margin-bottom: 20px;
 }
 
 /* MENU */
@@ -66,7 +65,7 @@ main, article {
     color: #C39756;
     transition: 0.35s;
 }
-
+/* 
 #menu button {
     margin-top: 10px;
     font-family: 'Courier New', Courier, monospace;
@@ -79,7 +78,7 @@ main, article {
     color: #ECECEC; 
     animation-iteration-count: infinite;
     animation-name: rotation;
-}
+} */
 
 /* #menu button:hover {
     color: #2E2E2E;
@@ -96,7 +95,6 @@ main, article {
     to {
         rotate: 360deg;
     }
-
 }
 
 

@@ -1,4 +1,5 @@
 
+
 function WebDev() {
     document.getElementById(`web-dev`).classList.add(`selected`);
     document.getElementById(`writer`).classList.remove(`selected`);
@@ -33,7 +34,7 @@ function Slider() {
 
     function addClass(i) {
         setTimeout(function() {child[i].classList.add(`slide`);}, i * 1000);   
-        removeClass(i)
+        removeClass(i);
     }
 
     function removeClass(i) {
@@ -45,5 +46,32 @@ function Slider() {
 }
 
 
-const webText = [`Project 01`, `Project 02`, `Project 03`, `Project 04`, `Project 05`, `Project 06`, `Project 07`, `Project 08`, `Project 09`, `Project 10`, `Project 11`, `Project 12`]
 
+// PROJECT DESCRIPTIONS
+
+const WebProjects = [
+    {Name : `Project 01 Type Description`, Description : `A Slightly Detailed Description of the Project`},
+    {Name : `Project 02 Type Description`, Description : `A Slightly Detailed Description of the Project`},
+    {Name : `Project 03 Type Description`, Description : `A Slightly Detailed Description of the Project`},
+    {Name : `Project 04 Type Description`, Description : `A Slightly Detailed Description of the Project`},
+    {Name : `Project 05 Type Description`, Description : `A Slightly Detailed Description of the Project`},
+    {Name : `Project 06 Type Description`, Description : `A Slightly Detailed Description of the Project`},
+    {Name : `Project 07 Type Description`, Description : `A Slightly Detailed Description of the Project`},
+    {Name : `Project 08 Type Description`, Description : `Boo!`},
+    {Name : `Project 09 Type Description`, Description : `Did I get ya?`},
+    {Name : `Project 10 Type Description`, Description : `A Slightly Detailed Description of the Project`},
+    {Name : `Project 11 Type Description`, Description : `A Slightly Detailed Description of the Project`},
+    {Name : `Project 12 Type Description`, Description : `A Slightly Detailed Description of the Project`}]
+
+
+
+function ProjectText(index) {
+        document.getElementById(`project-text`).innerText = WebProjects[index].Name;
+        document.getElementById(`project-description`).innerText = WebProjects[index].Description
+}
+
+function OrigintalText() {
+    document.getElementById(`project-text`).innerText = `Select A Project`;
+    document.getElementById(`project-description`).innerText = ``
+
+}
