@@ -31,6 +31,13 @@ h2 {
     transition: 0.35s;
 }
 
+/* .page-button button:last-of-type:focus {
+    color: #2E2E2E;
+    background-color: #a57937;
+    transition: 0.35s;
+} */
+
+
 .page-button div {
     position: absolute;
     width: 2px;
@@ -44,6 +51,7 @@ h2 {
     transform: translate(-50%, 0%);
     
 }
+
 
 #resume {
     float: right;
@@ -243,6 +251,7 @@ h2 {
     text-transform: uppercase;
     padding-top: 3%;
     padding-bottom: 2.5%;
+    position: relative;
 }
 
 .slide {
@@ -334,3 +343,48 @@ h1 {
     font-family: Bisdak;
 }
 
+
+/* #info-box {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+} */
+
+#info {
+    position: absolute;
+    width: 65%;
+    height: auto;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #ECECEC;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    z-index: 5;
+}
+
+#info button {
+    float: right;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h2, h3, h4 {
+    font-family: Bisdak;
+    margin-left: 1rem;
+}
+
+#info p {
+    margin-left: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.selected-info {
+    color: #2E2E2E !important;
+    background-color: #a57937 !important;
+    transition: 0.35s;
+}

@@ -75,3 +75,14 @@ function OrigintalText() {
     document.getElementById(`project-description`).innerText = ``
 
 }
+
+
+function Info() {
+    if (document.getElementById(`info`).style.display == `none`) {
+    document.getElementById(`info-button`).classList.add(`selected-info`);
+    document.getElementById(`info`).style.display = `block`}
+    else {
+        document.getElementById(`info-button`).classList.remove(`selected-info`);
+        document.getElementById(`info`).style.display = `none`;
+    }
+}
