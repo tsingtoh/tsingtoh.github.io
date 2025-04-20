@@ -21,6 +21,17 @@ function Writer() {
 }
 
 
+function Info() {
+    if (document.getElementById(`info`).style.display == `none`) {
+    document.getElementById(`info`).style.display = `block`;
+    document.getElementById(`info-button`).classList.add(`selected-info`);}
+    else {
+        document.getElementById(`info`).style.display = `none`;
+        document.getElementById(`info-button`).classList.remove(`selected-info`);
+    }
+}
+
+
 function Slider() {
     var root = document.getElementById(`web-design`)
     var child = root.getElementsByClassName(`column`);
@@ -77,12 +88,3 @@ function OrigintalText() {
 }
 
 
-function Info() {
-    if (document.getElementById(`info`).style.display == `none`) {
-    document.getElementById(`info-button`).classList.add(`selected-info`);
-    document.getElementById(`info`).style.display = `block`}
-    else {
-        document.getElementById(`info-button`).classList.remove(`selected-info`);
-        document.getElementById(`info`).style.display = `none`;
-    }
-}
