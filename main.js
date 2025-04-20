@@ -1,7 +1,7 @@
 
 function Head() {
     document.getElementById(`head`).insertAdjacentHTML(`beforeend`, 
-        `<link rel="icon" type="image/x-icon" href="/css/fonts/favicon.png">`);
+        `<link rel="icon" type="image/x-icon" href="/css/images/favicon.png">`);
 }
 
 function Menu() {
